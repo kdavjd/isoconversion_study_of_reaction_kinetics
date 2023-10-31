@@ -8,23 +8,28 @@
 # Реализованные методы
 <div style="text-align: justify;">
 
-+ Model fitting methods:
-  - [X] Direct differential (DD)
-  - [X] Coats-Redfern (CR)
-+ Model-free (isoconversional) methods:
-  + Differential methods:
-    - [X] Friedman (FR)
-  + Integral methods:
-    + Approximated:
-      - [X] Ozawa-Flynn-Wall (OFW)
-      - [X] Kissinger-Akahira-Sunose (KAS)
-      - [X] Starink (STR)
-      - [X] Nonlinear integral method by Vyazovkin (VYZ)
-    + Numerical:
-      - [X] Advanced Isoconvertional method by Vyazovkin (AIC)
-      - [X] Average linear integral method (ALIM)
-+ Kinetic Compensation Effect (KCE)
-+ f(α), g(α), Z(α) Master Plots
++ Модельные методы:
+  - [X] Прямой дифференциальный
+  - [X] Коутса-Редферна
++ Бзмодельные методы:
+  + Дифференциальные методы:
+    - [X] Фридмана
+  + Интегральные методы:
+    + Аппроксимационные:
+      - [X] Озавы-Флина-Уолла (OFW)
+      - [X] Киссенджера-Акахиры-Суносе (KAS)
+      - [X] Старинка (STR)
+      - [X] Вязовкина (VYZ)
+    + Численные:
+      - [X] Улучшенный Вязовкин (AIC)  
++ Компенсационный эффект (KCE)
++ f(α), g(α), Z(α) Мастер графики
++ Предсказания:
+  + Дифференциальные методы:
+    - [X] Уравнение Родюта
+  + Интегральные методы:
+    - [X] Уравнение Вязовкина
+    - [X] Уравнение Фаршаса
 
 </div>
 
@@ -34,13 +39,10 @@
 
 Прежде чем начать работу с этим проектом, убедитесь, что у вас установлен Python версии 3.11 и необходимые библиотеки. Все необходимые зависимости указаны в файле `requirements.txt`.
 
-## Установка
-
-1. Клонируйте репозиторий:
-   ```bash
-   git clone (https://github.com/kdavjd/isoconversion_study_of_reaction_kinetics)
-2. Установите необходимые зависимости:
-   pip install -r requirements.txt
+## Установите необходимые зависимости
+ ```bash
+ pip install -r requirements.txt 
+ ```
 
 ## Настройка
 1. Если Ваш датасет был получен через приложение деконволюции, то поместите его в 'src/TGA'. Иначе приведите файл в соответствие с готовыми примерами.
